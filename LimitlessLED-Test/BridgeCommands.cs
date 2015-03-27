@@ -8,8 +8,8 @@
     {
         // Commands
         // White LEDs
-        public static byte[] AllOn          = { 0x35, 0x0, 0x55 };
-        public static byte[] AllOff         = { 0x39, 0x0, 0x55 };
+        public static byte[] AllOn          = { 0x42, 0x0, 0x55 };
+        public static byte[] AllOff         = { 0x41, 0x0, 0x55 };
         public static byte[] AllNight       = { 0xB9, 0x0, 0x55 };
         public static byte[] AllFull        = { 0xB5, 0x0, 0x55 };
     

@@ -9,7 +9,8 @@ namespace LimitlessLED_Test
     {
         // Connect to bridge
         static readonly string BridgeIpAddress = ConfigurationManager.AppSettings["ip"];
-        static readonly UdpClient UdpClient = new UdpClient(BridgeIpAddress, 8899);
+        private static readonly int Port = int.Parse(ConfigurationManager.AppSettings["port"]);
+        static readonly UdpClient UdpClient = new UdpClient(BridgeIpAddress, Port);
 
         /// <summary>
         /// Shortcut to send UDP commands to the wifi bridge
